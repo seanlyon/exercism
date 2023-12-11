@@ -2,7 +2,7 @@
 // oven.
 int ovenTime() {
     // TODO: Return the correct time.
-    return 0;
+    return 40;
 }
 
 /* remainingOvenTime returns the remaining
