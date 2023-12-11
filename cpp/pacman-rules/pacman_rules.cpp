@@ -19,7 +19,7 @@ bool scored(bool touching_power_pellet, bool touching_dot) {
 // does not have a power pellet active.
 bool lost(bool power_pellet_active, bool touching_ghost) {
     // TODO: Please implement the lost function
-    return false;
+    return !power_pellet_active && touching_ghost;
 }
 
 // won returns a boolean value if Pac-Man wins.

@@ -34,8 +34,6 @@ TEST_CASE("no score when nothing eaten", "[task_2]") {
   REQUIRE_FALSE( scored(false, false));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
-
 TEST_CASE("lose if touching a ghost without a power pellet active", "[task_3]") {
   REQUIRE( lost(false, true));
 }
@@ -47,6 +45,8 @@ TEST_CASE("don't lose if touching a ghost with a power pellet active", "[task_3]
 TEST_CASE("don't lose if not touching a ghost", "[task_3]") {
   REQUIRE_FALSE( lost(true, false));
 }
+
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE( "win if all dots eaten", "[task_4]") {
       REQUIRE( won(true, false, false));
