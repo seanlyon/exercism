@@ -27,5 +27,5 @@ int preparationTime(int numberOfLayers) {
 // far.
 int elapsedTime(int numberOfLayers, int actualMinutesInOven) {
     // TODO: Calculate and return the total time so far.
-    return 0;
+    return preparationTime(numberOfLayers) + actualMinutesInOven;
 }

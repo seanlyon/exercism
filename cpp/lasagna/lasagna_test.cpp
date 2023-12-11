@@ -50,8 +50,6 @@ TEST_CASE("Correct for 11 layers", "[task_3]") {
     REQUIRE(expected == actual);
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
-
 TEST_CASE("Fresh in the oven, 12 layers!", "[task_4]") {
     int timeSpendInOven = 0;
     int timePerLayer = 2;
@@ -71,5 +69,7 @@ TEST_CASE("One minute left, 5 layers!", "[task_4]") {
 
     REQUIRE(expected == actual);
 }
+
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 #endif
