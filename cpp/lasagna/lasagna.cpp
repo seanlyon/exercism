@@ -20,7 +20,7 @@ int remainingOvenTime(int actualMinutesInOven) {
 int preparationTime(int numberOfLayers) {
     // TODO: Calculate and return the preparation time with the
     // `numberOfLayers`.
-    return 0;
+    return 2 * numberOfLayers;
 }
 
 // elapsedTime calculates the total time spent to create and bake the lasagna so
