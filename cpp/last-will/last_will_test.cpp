@@ -39,8 +39,6 @@ TEST_CASE("Account number assembly function exists in correct namespace", "[task
     REQUIRE_NOTHROW(estate_executor::assemble_account_number(0));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
-
 TEST_CASE("Account number assembly works correctly", "[task_2]") {
     int account_with_secret_1{16706};
     int account_with_secret_23{14238};
@@ -48,6 +46,8 @@ TEST_CASE("Account number assembly works correctly", "[task_2]") {
     REQUIRE(estate_executor::assemble_account_number(1) == account_with_secret_1);
     REQUIRE(estate_executor::assemble_account_number(23) == account_with_secret_23);
 }
+
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("Code fragment number assembly function exists in correct namespace", "[task_3]") {
     REQUIRE_NOTHROW(estate_executor::assemble_code());
