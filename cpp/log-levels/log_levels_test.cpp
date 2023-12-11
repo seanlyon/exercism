@@ -61,8 +61,6 @@ TEST_CASE("Info log level", "[task_2]")
     REQUIRE(actual == expected);
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
-
 TEST_CASE("Error reformat", "[task_3]")
 {
     const string actual = log_line::reformat("[ERROR]: Segmentation fault");
@@ -89,4 +87,7 @@ TEST_CASE("Info reformat", "[task_3]")
 
     REQUIRE(actual == expected);
 }
+
+#if defined(EXERCISM_RUN_ALL_TESTS)
+
 #endif
