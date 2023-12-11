@@ -3,7 +3,7 @@
 // and is touching a ghost.
 bool can_eat_ghost(bool power_pellet_active, bool touching_ghost) {
     // TODO: Please implement the can_eat_ghost function
-    return false;
+    return power_pellet_active && touching_ghost;
 }
 
 // score returns a boolean value if Pac-Man scored.
