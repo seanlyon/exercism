@@ -34,8 +34,6 @@ TEST_CASE("Info message", "[task_1]")
     REQUIRE(actual == expected);
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
-
 TEST_CASE("Error log level", "[task_2]")
 {
     const string actual = log_line::log_level("[ERROR]: Disk full");
@@ -62,6 +60,8 @@ TEST_CASE("Info log level", "[task_2]")
 
     REQUIRE(actual == expected);
 }
+
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("Error reformat", "[task_3]")
 {
