@@ -28,5 +28,5 @@ bool lost(bool power_pellet_active, bool touching_ghost) {
 bool won(bool has_eaten_all_dots, bool power_pellet_active,
          bool touching_ghost) {
     // TODO: Please implement the won function
-    return false;
+    return has_eaten_all_dots && !lost(power_pellet_active, touching_ghost);
 }
